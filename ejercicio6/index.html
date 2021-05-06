@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <section class="contenedor">
+        <form action="php/prog.php" method="POST">
+            Nombre: <input type="text" name="nombre" placeholder="Nombre" class="controls"><br>
+            Apellido: <input type="text" name="apellido" placeholder="Apellido" class="controls"><br>
+            DNI: <input type="text" name="dni" placeholder="DNI" class="controls"><br>
+            Email: <input type="email" name="correo" class="controls"><br>
+            fecha de nacimiento: <input type="date" name="fecha" class="controls" ><br>
+            <select name="formulario1" id=""  class="controls">
+                <option value="Provincia">Entre Rios</option>
+                <option value="Provincia">Buenos Aires </option>
+                <option value="Provincia">Santa Fe</option>
+                <option value="Provincia">Cordoba</option>
+                <option value="Provincia">Chubut</option>
+                <option value="Provincia">Rio Negro </option>
+                <option value="Provincia">Misiones</option>
+                <option value="Provincia">Corrientes</option>
+            </select>
+            Donante: <br>
+            <input type="radio" name="estado"  class="controls">Si <br>
+            <input type="radio" name="estado" class="controls" >No <br>
+            Acepta los terminos y condiciones <input type="checkbox"  class="controls"><br>
+            <input type="submit" placeholder="Enviar" class="button">
+        </form>
+    </section>
+</body>
+</html>
