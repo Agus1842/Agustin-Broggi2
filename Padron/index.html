@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Formulario Padron-->
+    <div class="form">
+        <form action="prog.php" method="POST" i>
+            <h2>NDI:</h2>
+            <input type="num" name="DNI">
+            <h2>Sexo:</h2>
+            <span>Masculino:<input type="radio" name="sexo" value="M"></span>
+            <span>Femenino:<input type="radio" name="sexo" value="F"></span>
+            <span>Indefinido<input type="radio" name="sexo" value="I"></span>
+            <h2>Provincia:</h2>
+            <select name="provincia" id="selector">
+                <option value="0">Seleccione</option>
+                <option value="1">Entre Rios</option>
+                <option value="2">Catamarca</option>
+                <option value="3">La Rioja</option>
+            </select>
+            <button type="submit" name="enviar">Enviar</button>
+        </form>
+        <div class="mt-3" id="respuesta">
+            <div class="alert alert-primary" role="alert">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
